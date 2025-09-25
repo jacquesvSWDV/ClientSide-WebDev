@@ -1,0 +1,68 @@
+<!-- different types of forms -->
+
+<style>
+ fieldset {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border-radius: 15px;
+    padding: 18px;
+ }
+ input{
+    margin: 6px;
+    max-width: 200px;
+    height: 23px;
+    border-radius: 5px;
+    border: 1px solid gray;
+ }
+
+ button{
+    max-width: 110px;
+    margin: 8px;
+    background: lightblue;
+    border: none;
+ }
+</style>
+
+<form action="/controller.php" method="POST">
+    <fieldset>
+        <legend>Login Form</legend>
+
+        <!-- <label for="username">Username:</label> -->
+        <input type="text" name="username" placeholder="username"/>
+
+        <!-- <label for="password">Password:</label> -->
+        <input type="password" name="password" placeholder="password"/>
+
+        
+    <button type="submit">Submit</button>
+  </fieldset>
+</form>
+
+<form>
+ <fieldset>
+    <legend>Types of Forms</legend>
+    <input type="date" />
+    <input type="number" />
+    <input type="checkbox" />
+    <input type="range" />
+    <input type="radio" />
+    <input type="email" />
+    <input type="file" />
+    <input type="color" />
+
+
+    <select>
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+    </select>
+
+    <br/>
+    <textarea rows="10" cols="40" maxlength="100">
+
+    </textarea>
+
+    <button>Submit</button>
+ </fieldset>
+</form>

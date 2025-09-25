@@ -1,0 +1,11 @@
+:root{
+    --color-primary: blue;
+    --border-radius-primary: 25px;
+}
+
+#box{
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius-primary);
+}

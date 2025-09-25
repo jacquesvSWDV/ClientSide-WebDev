@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <!--<link href="#" rel="stylesheet">-->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        height: 100%;
+      }
+      header {
+        background: orange;
+        height: 100px;
+        width: 100%;
+      }
+      #container {
+        display: flex;
+        background: gray;
+        height: calc(100% - 100px);
+      }
+      nav,
+      aside {
+        flex: 0 0 20%;
+        background: blue;
+      }
+      main {
+        flex: 1;
+        background: red;
+        padding: 10px;
+      }
+      footer {
+        background: gray;
+        height: 50px;
+      }
+      #logo {
+        padding: 15px;
+      }
+      ul li {
+        margin: 25px;
+      }
+      a:link{
+        color:blueviolet;
+      }
+      <!--Got the above code for link color from W3Schools, was hard to see the links with default blue-->
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="logo">My Portfolio Page</h1>
+    </header>
+
+    <div id="container">
+      <nav>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+          <li><a href="#">Link 5</a></li>
+          <li><a href="#">Link 6</a></li>
+          <li><a href="#">Link 7</a></li>
+        </ul>
+      </nav>
+
+      <main>This is the main content area.</main>
+
+      <aside>This is the aside area.</aside>
+    </div>
+
+    <footer>This is the footer area.</footer>
+  </body>
+</html>
