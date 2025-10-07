@@ -23,6 +23,21 @@
         color: white;
         text-decoration: underline;
     }
+    .hero{
+        background: url('https://i.ytimg.com/vi/-cHExAo9unk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB0n8E2XX_co2bKRF7Qh-qHQU0JfA');
+        background-size: cover;
+    }
+    .container2{
+        padding-top:10px;
+        padding-bottom:10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 0 !important;
+    }
 
 </style>
 </head>
@@ -41,9 +56,12 @@
      </nav>
 
      <!-- Hero Section-->
-      <section class="text-center py-60 bg-gray-200">
-        <h2 class="text-4xl font-bold text-gray-800">Welcome to my website</h2>
-
+      <section class="hero text-center py-60 bg-gray-200">
+        <div class="container2">
+        <h2 class="text-4xl font-bold text-white">Welcome to my website</h2>
+        <p class="mt-4 text-lg text-black-600">This was made using TailwindCSS.</p>
+        <button class="mt-6 bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Get Started</button>
+        </div>
       </section>
     
 </body>
