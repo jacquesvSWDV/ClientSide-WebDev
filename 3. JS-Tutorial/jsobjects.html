@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<div id="box"></div>
+
+<script>
+
+	var person = {
+    	"name": "jacques",
+        "age": 22,
+        "alert": function(){
+        	window.alert("Javascript is awesome!");
+        },
+        "hello": function(name, alert){
+        	alert();
+        	return `Hello, ${name}!`;
+        }
+     	
+   }
+   
+   person.email="email@example.com";
+        
+	const collection = [1,2,3,4,5];
+    
+    const box = document.getElementById("box");
+    
+    box.innerHTML = `<button onclick="person.alert()">Click Me</button>`
+    
+    
+</script>
+</body>
+
+</html>
