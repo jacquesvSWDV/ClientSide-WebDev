@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-
+SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://finteger.github.io/portfolio.css">
+    <style>
+        #profilePicture{
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        #profilePicture:hover{
+            transform: scale(1.1);
+        }
+
+        #logo{
+            transition: opacity 0.3s ease;
+        }
+
+        @keyframes bounce{
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(50px);
+            }
+        }
+        
+    </style>
+  </head>
+  <body>
+    <header>
+      <figure>
+        <img id="profilePicture" src="https://raw.githubusercontent.com/finteger/placeholderimage/main/placeholder.png" />
+        <figcaption>Jacques Valentine</figcaption>
+      </figure>
+      <h1 id="logo">Developer Profile</h1>
+    </header>
+    <div id="container">
+      <nav>
+        <ul>
+          <li>
+            <span>
+              <i class="fa-brands fa-github"></i>
+              <a href="#">Github</a>
+            </span>
+          </li>
+          <li>
+            <span>
+              <i class="fa-brands fa-linkedin"></i>
+              <a href="#">LinkedIn</a>
+            </span>
+          </li>
+          <li>
+            <span>
+              <i class="fa-regular fa-lightbulb"></i>
+              <a href="#">Interest</a>
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <table>
+          <caption>
+            <i class="fa-solid fa-code"></i> Technical Expertise
+          </caption>
+          <thead>
+            <tr>
+              <th>
+                <i class="fa-brands fa-html5"></i>&nbsp;HTML 5
+              </th>
+              <th>
+                <i class="fa-brands fa-css3-alt"></i>&nbsp;CSS 3
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Semantic Tags</td>
+              <td>Grid/Flexbox</td>
+            </tr>
+            <tr>
+              <td>Media Embeds</td>
+              <td>Animations</td>
+            </tr>
+            <tr>
+              <td>Attributes</td>
+              <td>Responsive</td>
+            </tr>
+            <tr>
+              <td>Forms</td>
+              <td>Graphic Design</td>
+            </tr>
+            <tr>
+              <th colspan="2" style="text-align:center;font-weight:600;">
+                <i class="fa-brands fa-js"></i>&nbsp;JavaScript
+              </th>
+            </tr>
+            <tr>
+              <td colspan="2">Functions</td>
+            </tr>
+            <tr>
+              <td colspan="2">Event Handlers</td>
+            </tr>
+            <tr>
+              <td colspan="2">Loops</td>
+            </tr>
+            <tr>
+              <td colspan="2">Control Flows</td>
+            </tr>
+          </tbody>
+        </table>
+        <div>
+          <h2>About Me</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        </div>
+      </main>
+ <aside>
+        <blockquote>
+          <q>YourNameHere worked great in our development team. Highly recommended. </q>
+          <br>
+          <br> - <em>Google Engineer</em>
+        </blockquote>
+        <br>
+        <blockquote>
+          <q> Helped develop our UI/UX for the platform... </q>
+          <br>
+          <br> - <em>TechMogul.com</em>
+        </blockquote>
+      </aside>
+    </div>
+    <footer>
+      <div>
+        <i class="fa-solid fa-phone"></i>&nbsp;&nbsp; <a href="tel:+15555555555">555-555-5555</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-envelope"></i>&nbsp; <a href="mailto:MyExampleEmail@gmail.com">MyExampleEmail@gmail.com</a>
+    </footer>
+   </body>
+   <script>
+        var td = document.querySelectorAll('td');
+        td.forEach(function(element) {
+            var bullet = document.createTextNode('\u2022 ');
+            element.prepend(bullet);
+        });
+
+        const profilePicture = document.getElementById("profilePicture");
+        const logo = document.getElementById('logo');
+        const originalText = logo.innerText;
+        const hoverText = 'Welcome to My Profile';
+
+        profilePicture.addEventListener('mouseover', () => {
+            logo.style.opacity = '0';
+            logo.style.animation = 'bounce 3s infinite';
+            setTimeout(() => {
+                logo.innerText = hoverText;
+                logo.style.opacity = '1';
+            }, 300)
+        });
+
+        profilePicture.addEventListener('mouseout', () => {
+            logo.style.opacity = '0';
+            logo.style.animation = 'none';
+            setTimeout(() => {
+                logo.innerText = originalText;
+                logo.style.opacity = '1';
+            }, 300)
+        });
+
+   </script>
+  </html>
